@@ -30,6 +30,7 @@ RUN pip install awscli awsebcli==3.12.0
 RUN curl https://get.docker.com/ | sh
 RUN go get -u github.com/jstemmer/go-junit-report github.com/golang/dep/cmd/dep github.com/mattn/goveralls
 RUN go get -u github.com/go-playground/overalls
-RUN go get github.com/golang/mock/mockgen
 RUN go get github.com/golang/mock/gomock 
+RUN go get -d github.com/golang/mock/mockgen
+RUN cd $GOPATH/src/github.com/golang/mock/mockgen && git checkout v1.0.0; go install github.com/golang/mock/mockgen
 
