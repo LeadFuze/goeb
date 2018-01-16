@@ -1,4 +1,4 @@
-FROM golang:1.8.0
+FROM golang:1.9.2
 RUN apt-get update && apt-get install -y python3.4 ruby
 
 # gpg keys listed at https://github.com/nodejs/node
