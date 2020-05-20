@@ -1,5 +1,5 @@
 FROM golang:1.12.7
-RUN apt-get update && apt-get install -y python3.8.1 ruby
+RUN apt-get update && apt-get install -y python3.4 ruby
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
