@@ -26,7 +26,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py
-RUN pip install awscli awsebcli==3.14.4
+RUN pip install awscli==1.16.9 awsebcli==3.14.4
 RUN curl https://get.docker.com/ | sh
 RUN go get -u github.com/jstemmer/go-junit-report github.com/golang/dep/cmd/dep github.com/mattn/goveralls
 RUN go get -u github.com/go-playground/overalls
